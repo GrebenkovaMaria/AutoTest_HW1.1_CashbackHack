@@ -1,8 +1,10 @@
 
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class CashbackHackerServiceJupiterTest {
-    @ org.junit.jupiter.api. Test
+    @ Test
     void shouldRemain0withAmountEqualsToBoundary() {
         CashbackHackerService service = new CashbackHackerService();
         int amount = 1000;
@@ -10,7 +12,7 @@ class CashbackHackerServiceJupiterTest {
         int actual = service.remain(amount) ;
         assertEquals(expected, actual);
     }
-    @ org.junit.jupiter.api. Test
+    @ Test
     void shouldRemain1withAmountEquals999() {
         CashbackHackerService service = new CashbackHackerService();
         int amount = 999;
@@ -19,7 +21,7 @@ class CashbackHackerServiceJupiterTest {
         assertEquals(expected, actual);
     }
 
-    @ org.junit.jupiter.api. Test
+    @ Test
     void shouldRemain1000withAmountEquals0() {
         CashbackHackerService service = new CashbackHackerService();
         int amount = 0;
@@ -28,7 +30,7 @@ class CashbackHackerServiceJupiterTest {
         assertEquals(expected, actual);
     }
 
-    @ org.junit.jupiter.api. Test
+    @ Test
     void shouldRemainZeroWithAmountEquals999() {
         CashbackHackerService service = new CashbackHackerService();
         int amount = 1;
@@ -37,7 +39,7 @@ class CashbackHackerServiceJupiterTest {
         assertEquals(expected, actual);
     }
 
-    @ org.junit.jupiter.api. Test
+    @ Test
     void shouldRemainZeroWithAmountMoreBoundary() {
         CashbackHackerService service = new CashbackHackerService();
         int amount = 1200;
